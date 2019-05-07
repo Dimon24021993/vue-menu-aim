@@ -1,0 +1,7 @@
+*
+!.git*
+!.npmignore
+!LICENSE
+!README.md
+!package.json
+!vue-menu-aim.js

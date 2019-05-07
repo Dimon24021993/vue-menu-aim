@@ -1,0 +1,23 @@
+{
+  "name": "vue-menu-aim",
+  "version": "0.1.0",
+  "description": "menu with triangle, for vue",
+  "main": "vue-menu-aim.js",
+  "scripts": {
+    "format": "prettier --write *.js",
+    "test": "prettier *.js"
+  },
+  "keywords": [
+    "menu",
+    "aim",
+    "vue"
+  ],
+  "authors": [
+    "Ben Kamens <kamens@gmail.com>",
+    "Dimon24021993 <khmelnitskiy93@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  }
+}
