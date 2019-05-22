@@ -255,7 +255,7 @@
      */
     $menu.addEventListener('mouseleave', mouseleaveMenu);
     var rows = $menu.querySelectorAll(options.rowSelector);
-    for (var i of rows) {
+    for (var i in rows) {
 
       rows[i].addEventListener('mouseenter', mouseenterRow);
       rows[i].addEventListener('mouseleave', mouseleaveRow);
