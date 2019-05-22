@@ -29,7 +29,7 @@
          activate: noop,
          deactivate: noop,
          exitMenu: noop
-       }
+       };
      for (var k in opts) options[k] = opts[k];
 
      var MOUSE_LOCS_TRACKED = 3, // number of past mouse locations to track
