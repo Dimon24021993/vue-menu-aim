@@ -3,14 +3,11 @@
 
   function vueMenuAim(targets, opts) {
     // Initialize vue-vue-menu-aim for all elements in HTMLCollection
-    for (var i in targets) {
-      init.call(this, opts, targets[i]);
-    }
+    Array.prototype.slice.call(targets).forEach(function (elem) {
+      init.call(this, opts, elem);
+    });
     return this;
   }
-
-
-
 
   function noop() {}
 
@@ -255,12 +252,11 @@
      */
     $menu.addEventListener('mouseleave', mouseleaveMenu);
     var rows = $menu.querySelectorAll(options.rowSelector);
-    for (var i in rows) {
-
-      rows[i].addEventListener('mouseenter', mouseenterRow);
-      rows[i].addEventListener('mouseleave', mouseleaveRow);
-      rows[i].addEventListener('click', clickRow);
-    }
+    Array.prototype.slice.call(rows).forEach(function (row) {
+      row.addEventListener('mouseenter', mouseenterRow);
+      row.addEventListener('mouseleave', mouseleaveRow);
+      row.addEventListener('click', clickRow);
+    });
 
     document.addEventListener('mousemove', mousemoveDocument);
   }
