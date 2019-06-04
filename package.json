@@ -1,6 +1,6 @@
 {
   "name": "vue-menu-aim",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "menu with triangle, for vue",
   "main": "vue-menu-aim.js",
   "scripts": {
