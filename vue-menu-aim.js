@@ -137,10 +137,10 @@
       //  }
 
       var offset = {
-          top: $menu.offsetTop || options.top,
-          left: $menu.offsetLeft || options.left,
-          width: $menu.offsetWidth,
-          height: $menu.offsetHeight
+          top: options.top || $menu.offsetTop,
+          left: options.left || $menu.offsetLeft,
+          width: options.width || $menu.offsetWidth,
+          height: options.height || $menu.offsetHeight
         },
         upperLeft = {
           x: offset.left,

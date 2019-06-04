@@ -12,9 +12,11 @@ npm i -S vue-menu-aim
 import vueMenuAim from "vue-menu-aim";
 Vue.use(vueMenuAim);
 ```
+
 ## Use
+
 ```vue
- <v-list class="menu-aim">
+<v-list class="menu-aim">
     <template v-for="(element) in catalog">
       <v-list-tile :key="element.title" :to="`/groups/${element.id}`" class="menu-li">
         <v-list-tile-content class="main-group-title">{{element.title}}</v-list-tile-content>
@@ -41,7 +43,9 @@ Vue.use(vueMenuAim);
     });
   },
 ```
+
 ### Options
+
 ```js
 {
      // Function to call when a row is purposefully activated. Use this
@@ -80,12 +84,26 @@ Vue.use(vueMenuAim);
      // cursor from the main menu into the submenu. Can be one of "right",
      // "left", "above", or "below". Defaults to "right".
      submenuDirection: "right",
-     
+
      // Top side to menu (need if use Vuetify v-menu component)
+     // and for top corners of menu square
+     // Default $menu.offsetTop
      top: 0,
-     
+
      // Left side to menu (need if use Vuetify v-menu component)
-     left: 0
+     // and for left corners of menu square
+     // Default $menu.offsetLeft
+     left: 0,
+
+     // Width of menu
+     // Used for create move angle from menu to submenu
+     // Default $menu.offsetWidth
+     width: 0,
+
+     // Height of menu
+     // Used for create move angle from menu to submenu
+     // Default $menu.offsetHeight
+     height: 0
  }
 ```
 
