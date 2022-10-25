@@ -17,19 +17,19 @@ Vue.use(vueMenuAim);
 
 ```vue
 <v-list class="menu-aim">
-    <template v-for="(element) in catalog">
-      <v-list-tile :key="element.title" :to="`/groups/${element.id}`" class="menu-li">
-        <v-list-tile-content class="main-group-title">{{element.title}}</v-list-tile-content>
-        <v-list-tile-action>
-          <v-icon color="grey">navigate_next</v-icon>
-        </v-list-tile-action>
-      </v-list-tile>
-    </template>
-  </v-list>
+  <template v-for="(element) in catalog">
+    <v-list-tile :key="element.title" :to="`/groups/${element.id}`" class="menu-li">
+      <v-list-tile-content class="main-group-title">{{element.title}}</v-list-tile-content>
+      <v-list-tile-action>
+        <v-icon color="grey">navigate_next</v-icon>
+      </v-list-tile-action>
+    </v-list-tile>
+  </template>
+</v-list>
 ```
 
 ```js
- updated() {
+mounted() {
  //if use v-menu for this - need add top and left options in configure
  //also can use $refs
     var activator = document.querySelector(".v-menu__activator");
